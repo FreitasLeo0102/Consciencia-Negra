@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #C28245;
+        }
+
+        header {
+            background-color: #C28245;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 15px 7px rgba(0, 0, 0, 0.27);
+        }
+
+        nav {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5rem;
+        }
+
+        nav img {
+            width: 100px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10rem;
+            margin-right: 5rem;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-family: Radley;
+            font-weight: 400;
+            font-size: 40px;
+            color: #7C2300;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 3px;
+            background-color: #7C2300;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.25s ease-in-out;
+        }
+
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .intro h2 {
+            font-family: Radley;
+            font-weight: 400;
+            font-size: 80px;
+            color: #7C2300;
+            max-width: 1000px;
+            margin: 2rem 4rem;
+        }
+
+        .intro p {
+            font-family: Questrial;
+            font-weight: 400;
+            font-size: 40px;
+            color: #631E03;
+            max-width: 850px;
+            margin: 2rem 4rem;
+        }
+
+        .timeline-container {
+            position: relative;
+        }
+
+        .line {
+            width: 100%;
+            height: 5px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            z-index: 1;
+        }
+
+        .linha {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+        }
+
+        .item {
+            width: 230px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
+
+        .item.top {
+            margin-bottom: 45px;
+        }
+
+        .item.bottom {
+            margin-top: 75px;
+        }
+
+        .foto {
+            width: 230px;
+            height: 130px;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+
+        .card {
+            background: #8e5230;
+            color: white;
+            border-radius: 15px;
+            padding: 12px;
+            margin-top: 10px;
+            font-size: 14px;
+            border-radius: 0 0 15px 15px;
+            margin: 0;
+        }
+
+        .connector {
+            position: absolute;
+            width: 4px;
+            background: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .item.top .connector {
+            top: 100%;
+            height: 60px;
+        }
+
+        .item.bottom .connector {
+            bottom: 100%;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="IMG/logo.svg" alt="logo">
+
+            <ul>
+                <li><a href="">O que é a CN</a></li>
+                <li><a href="">Negros Revolucionarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Valorize a luta e a genialidade que vivem na essência do negro na tecnologia!</h2>
+
+        <p>Descubra como a trajetória do povo negro influencia a inovação e molda o futuro da tecnologia. Aqui,
+            celebramos conquistas, resistências e talentos que inspiram novas gerações.</p>
+    </section>
+
+    <section class="time-line">
+        <h2>Linha do tempo</h2>
+
+        <div class="timeline-container">
+
+            <div class="line"></div>
+
+            <div class="linha">
+
+                <div class="item top">
+                    <img src="IMG/index/mark.png" class="foto">
+                    <div class="card">
+                        <h3>Mark Dean</h3>
+                        <p>Ajudou a criar o primeiro computador pessoal da IBM e o sistema que conecta periféricos (bus
+                            system).</p>
+                    </div>
+                    <span class="connector"></span>
+                </div>
+
+                <div class="item top">
+                    <img src="IMG/index/tope.png" class="foto">
+                    <div class="card">
+                        <h3>Tope Awotona</h3>
+                        <p>Fundador da plataforma de agendamentos Calendly, avaliada em mais de 1 bilhão de dólares.</p>
+                    </div>
+                    <span class="connector"></span>
+                </div>
+
+                <div class="item top">
+                    <img src="IMG/index/shirley.png" class="foto">
+                    <div class="card">
+                        <h3>Shirley Ann Jackson</h3>
+                        <p>Pesquisas que contribuíram para o desenvolvimento do identificador de chamadas e outras
+                            tecnologias de telecomunicação.</p>
+                    </div>
+                    <span class="connector"></span>
+                </div>
+
+                <div class="item top">
+                    <img src="IMG/index/jerry.png" class="foto">
+                    <div class="card">
+                        <h3>Gerald Lawson</h3>
+                        <p>Criador do primeiro videogame com cartuchos intercambiáveis, o Fairchild Channel F.</p>
+                    </div>
+                    <span class="connector"></span>
+                </div>
+            </div>
+
+            <div class="linha">
+
+                <div class="item bottom">
+                    <img src="IMG/index/marian.png" class="foto">
+                    <div class="card">
+                        <h3>Marian Croak: </h3>
+                        <p>Inventora da tecnologia de voz sobre IP (VoIP), usada em chamadas pela internet.</p>
+                    </div>
+                    <span class="connector"></span>
+                </div>
+
+                <div class="item bottom">
+                    <img src="IMG/index/philip.png" class="foto">
+                    <div class="card">
+                        <h3>Philip Emeagwali: </h3>
+                        <p>Desenvolveu técnicas de supercomputação que influenciaram a Internet.</p>
+                    </div>
+                    <span class="connector"></span>
+                </div>
+
+                <div class="item bottom">
+                    <img src="IMG/index/otis.png" class="foto">
+                    <div class="card">
+                        <h3>Otis Boykin</h3>
+                        <p>Criou o resistor de precisão e melhorou o funcionamento do marcapasso.</p>
+                    </div>
+                    <span class="connector"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cn">
+        <div>
+            <h2>O que é a Consciência Negra?</h2>
+            <p>A Consciência Negra é o reconhecimento e a valorização da história, cultura e identidade do povo negro. Ela simboliza a luta contra o racismo e a busca por respeito, igualdade e justiça social. No Brasil, é celebrada em 20 de novembro, data que homenageia Zumbi dos Palmares, líder que lutou pela liberdade dos negros escravizados. Esse dia convida à reflexão sobre a importância da diversidade e o combate ao preconceito em todas as formas.</p>
+        </div>
+        <img src="IMG/index/CV-img.png" alt="">
+    </section>
+</body>
+
+</html>
