@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #C28245;
+}
+
+header {
+    background-color: #C28245;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px 7px rgba(0, 0, 0, 0.27);
+}
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10rem;
+    margin-right: 5rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Radley;
+    font-weight: 400;
+    font-size: 40px;
+    color: #7C2300;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #7C2300;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+#secao1{
+    display: flex;
+    background-color: #FFF6E3;
+    height: 702px;
+    width: 100%;
+    align-items: center;
+}
+#Mark{
+    width: 407px;
+    border-radius: 25px;
+    height: 607px;
+    box-shadow: 4px;
+}
+#letra-mark{
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color: #D27114;
+}
+#texto-mark{
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: justify;
+    color: #7C2300;
+    margin-right: 50px;
+}
+#titulo-secao2{
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color: #873C02;
+}
+#div-titulo-secao2{
+    display: flex;
+    justify-content: center;
+}
+.letras-secao2{
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-align: justify;
+    width: 350px;
+    height: 200px;
+}
+#div-img-secao2{
+    display: flex;
+    justify-content: space-evenly;
+}
+#div-letras-secao2{
+    display: flex;
+    justify-content: space-evenly;
+}
+#img-livro{
+    width: 102px;
+    height: 101px;
+}
+#img-coisinha{
+    width: 180px;
+    height: 120px;
+}
+#img-pc{
+    width: 125px;
+    height: 100px;
+}
