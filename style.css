@@ -1,124 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IM+Fell+English+SC&family=Questrial&family=Radley:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&family=WDXL+Lubrifont+TC&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
 
 body {
-
-    margin: 0;
     background-color: #C28245;
 }
 
-.cabecalho {
+header {
+    background-color: #C28245;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px 7px rgba(0, 0, 0, 0.27);
+}
 
+nav {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row nowrap;
     align-items: center;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-
-    img {
-
-        margin-left: 50px;
-    }
-
-    h1 {
-
-        color: #7C2300;
-        font-size: 40px;
-        font-family: "Radley", serif;
-        margin: 5px;
-    }
+    justify-content: space-between;
+    gap: 5rem;
 }
 
-.ultimo-titulo {
+nav img {
+    width: 100px;
+}
 
+nav ul {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 200px;
-    margin-right: 100px;
-
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10rem;
+    margin-right: 5rem;
 }
 
-.primeira-secao-conteudo {
-
-    width: 1300px;
-    margin-left: 150px;
-    letter-spacing: -1px;
-
-    h1 {
-
-        font-size: 72px;
-        color: #7C2300;
-    }
-
-    p {
-        font-size: 40px;
-        color: #631E03;
-        font-family: "Questrial", sans-serif;
-    }
-
+nav ul li {
+    list-style: none;
 }
 
-.animacao-sublinhado {
-    position: relative;
-    color: #7C2300;
+nav ul li a {
     text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.animacao-sublinhado::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: #7C2300;
-    transform: scaleX(0.0001);
-    transform-origin: bottom left;
-    transition: transform 0.3s ease-out;
-}
-
-.animacao-sublinhado:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-
-
-
-
-
-
-
-
-
-
-.timeline h2 {
-    font-family: ;
-    font-size: 4.375rem;
-    margin: 4rem;
-    text-align: center;
-}
-
-.container-timeline {
+    font-family: Radley;
+    font-weight: 400;
+    font-size: 40px;
+    color: #7C2300;
     position: relative;
 }
 
-.linha1 {
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #7C2300;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.intro h2 {
+    font-family: Radley;
+    font-weight: 400;
+    font-size: 80px;
+    color: #7C2300;
+    max-width: 1000px;
+    margin: 2rem 4rem;
+}
+
+.intro p {
+    font-family: Questrial;
+    font-weight: 400;
+    font-size: 40px;
+    color: #631E03;
+    max-width: 850px;
+    margin: 2rem 4rem;
+}
+
+.time-line h2 {
+    font-family: Radley;
+    font-size: 70px;
+    color: #7C2300;
+    text-align: center;
+    margin: 4rem;
+}
+
+.timeline-container {
+    position: relative;
+}
+
+.line {
     width: 100%;
     height: 5px;
     background: white;
     position: absolute;
     top: 50%;
     left: 0;
-    z-index: 0;
+    z-index: 1;
 }
 
 .linha {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+
 }
 
 .item {
@@ -129,11 +121,11 @@ body {
     margin: 0;
 }
 
-.caixa.top {
+.item.top {
     margin-bottom: 80px;
 }
 
-.caixa.bottom {
+.item.bottom {
     margin-top: 80px;
 }
 
@@ -144,127 +136,61 @@ body {
     object-fit: cover;
 }
 
-.cardmarrom {
+.card {
     background: #8e5230;
     color: white;
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
     height: 90px;
     padding: 12px;
+    margin-top: 10px;
     font-size: 14px;
+    border-radius: 0 0 15px 15px;
+    margin: 0;
 }
 
-.conector {
+.connector {
     position: absolute;
-    width: 5px;
+    width: 4px;
     background: white;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
 }
 
-.caixa.top .conector {
+.item.top .connector {
     top: 100%;
-    height: 80px;
+    height: 60px;
 }
 
-.caixa.bottom .conector {
+.item.bottom .connector {
     bottom: 100%;
-    height: 80px;
+    height: 60px;
 }
 
-#ultimalinha {
-    margin-bottom: 50px;
+.cn {
+    background-image: url(IMG/index/background\ CN.png);
 }
 
-
-
-
-
-.segunda-secao-conteudo {
-
+.cn {
     display: flex;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
     align-items: center;
-    padding: 40px;
-    background-image: url(img/image\ 3.png);
-    background-color: #803310;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-    gap: 20px;
-
-
-
-
-    h1 {
-        font-family: "Radley", serif;
-        font-size: 60px;
-        color: #F5B87E;
-    }
-
-    p {
-
-        font-size: 32px;
-        font-family: "Questrial", sans-serif;
-        color: #FFFDFD;
-        text-align: justify;
-    }
-
-    img {
-
-        width: 400px;
-    }
 }
 
-.segunda-secao-esquerda {
-
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-
+.cn div h2 {
+    font-family: Radley;
+    font-size: 80px;
+    color: #F5B87E;
+    margin: 1rem 3rem;
 }
 
-.segunda-secao-direita {}
-
-
-.terceira-secao-conteudo {
-    background-color: #AD723B;
-    padding-top: 40px;
-
-    p {
-
-        font-size: 32px;
-        font-family: "Questrial", sans-serif;
-        color: #4A1602;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    h1 {
-
-        font-family: "Radley", serif;
-        font-size: 60px;
-        color: #7C2300;
-        margin: 0px;
-    }
-
+.cn div p {
+    font-size: Questrial;
+    font-size: 42px;
+    color: #FFFDFD;
+    margin: 1rem 3rem;
 }
 
-.conteudo-geral {
-
-
-    display: flex;
-    flex-direction: column;
-
-}
-
-.titulo-terceira-secao {
-
-    width: 120px;
-    margin-left: 120px;
-}
-
-.texto-terceira-secao {
-
-    margin-left: 160px;
-    width: 1200px;
-    text-align: justify;
+.cn img {
+    width: 450px;
 }
