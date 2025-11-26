@@ -5,276 +5,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            background-color: #C28245;
-        }
-
-        header {
-            background-color: #C28245;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0px 4px 15px 7px rgba(0, 0, 0, 0.27);
-        }
-
-        nav {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 5rem;
-        }
-
-        nav img {
-            width: 100px;
-        }
-
-        nav ul {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 10rem;
-            margin-right: 5rem;
-        }
-
-        nav ul li {
-            list-style: none;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            font-family: Radley;
-            font-weight: 400;
-            font-size: 40px;
-            color: #7C2300;
-            position: relative;
-        }
-
-        nav ul li a::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 100%;
-            height: 3px;
-            background-color: #7C2300;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.25s ease-in-out;
-        }
-
-        nav ul li a:hover::after {
-            transform: scaleX(1);
-        }
-
-        .intro h2 {
-            font-family: Radley;
-            font-weight: 400;
-            font-size: 80px;
-            color: #7C2300;
-            max-width: 1000px;
-            margin: 2rem 4rem;
-        }
-
-        .intro p {
-            font-family: Questrial;
-            font-weight: 400;
-            font-size: 40px;
-            color: #631E03;
-            max-width: 850px;
-            margin: 2rem 4rem;
-        }
-
-        .timeline-container {
-            position: relative;
-        }
-
-        .line {
-            width: 100%;
-            height: 5px;
-            background: white;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            z-index: 1;
-        }
-
-        .linha {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-
-        }
-
-        .item {
-            width: 230px;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-            margin: 0;
-        }
-
-        .item.top {
-            margin-bottom: 45px;
-        }
-
-        .item.bottom {
-            margin-top: 75px;
-        }
-
-        .foto {
-            width: 230px;
-            height: 130px;
-            border-radius: 15px 15px 0 0;
-            object-fit: cover;
-        }
-
-        .card {
-            background: #8e5230;
-            color: white;
-            border-radius: 15px;
-            padding: 12px;
-            margin-top: 10px;
-            font-size: 14px;
-            border-radius: 0 0 15px 15px;
-            margin: 0;
-        }
-
-        .connector {
-            position: absolute;
-            width: 4px;
-            background: white;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .item.top .connector {
-            top: 100%;
-            height: 60px;
-        }
-
-        .item.bottom .connector {
-            bottom: 100%;
-            height: 60px;
-        }
-    </style>
+    <link rel="stylesheet" href="carroseal.css">
+    <title>Consciencia Negra</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img src="IMG/logo.svg" alt="logo">
 
-            <ul>
-                <li><a href="">O que é a CN</a></li>
-                <li><a href="">Negros Revolucionarios</a></li>
-            </ul>
-        </nav>
+    <header>
+
+        <div class="cabecalho">
+
+            <img src="img/Monitor.png" alt="Imagem de um monitor com um punho de uma pessoa negra no meio" />
+            <a href="#CN" class="animacao-sublinhado">
+                <h1>O que é a CN ?</h1>
+            </a>
+
+            <div class="ultimo-titulo">
+
+                <a href="#NR" class="animacao-sublinhado">
+                    <h1>Negros Revolucionarios</h1>
+                </a>
+
+            </div>
+
     </header>
 
-    <section class="intro">
-        <h2>Valorize a luta e a genialidade que vivem na essência do negro na tecnologia!</h2>
 
+    </div>
+
+    <div class="primeira-secao-conteudo">
+
+        <h1>Valorize a luta e a genialidade que vivem na essência do negro na tecnologia!</h1>
         <p>Descubra como a trajetória do povo negro influencia a inovação e molda o futuro da tecnologia. Aqui,
             celebramos conquistas, resistências e talentos que inspiram novas gerações.</p>
-    </section>
 
-    <section class="time-line">
+    </div>
+
+    <div class="timeline">
         <h2>Linha do tempo</h2>
 
-        <div class="timeline-container">
+        <div class="container-timeline">
 
-            <div class="line"></div>
+            <div class="linha1"></div>
 
             <div class="linha">
 
-                <div class="item top">
-                    <img src="IMG/index/mark.png" class="foto">
-                    <div class="card">
+                <div class="caixa top item">
+                    <img src="img/Rectangle_31.png" class="foto">
+                    <div class="cardmarrom">
                         <h3>Mark Dean</h3>
-                        <p>Ajudou a criar o primeiro computador pessoal da IBM e o sistema que conecta periféricos (bus
-                            system).</p>
+                        <p>Ajudou a criar o primeiro computador pessoal da IBM.</p>
                     </div>
-                    <span class="connector"></span>
+                    <span class="conector"></span>
                 </div>
 
-                <div class="item top">
-                    <img src="IMG/index/tope.png" class="foto">
-                    <div class="card">
+                <div class="caixa top item">
+                    <img src="img/Rectangle_46.png" class="foto">
+                    <div class="cardmarrom">
                         <h3>Tope Awotona</h3>
-                        <p>Fundador da plataforma de agendamentos Calendly, avaliada em mais de 1 bilhão de dólares.</p>
+                        <p>Fundador do Calendly.</p>
                     </div>
-                    <span class="connector"></span>
+                    <span class="conector"></span>
                 </div>
 
-                <div class="item top">
-                    <img src="IMG/index/shirley.png" class="foto">
-                    <div class="card">
+                <div class="caixa top item">
+                    <img src="img/Rectangle_39.png" class="foto">
+                    <div class="cardmarrom">
                         <h3>Shirley Ann Jackson</h3>
-                        <p>Pesquisas que contribuíram para o desenvolvimento do identificador de chamadas e outras
-                            tecnologias de telecomunicação.</p>
+                        <p>Contribuições para telecomunicações.</p>
                     </div>
-                    <span class="connector"></span>
+                    <span class="conector"></span>
                 </div>
 
-                <div class="item top">
-                    <img src="IMG/index/jerry.png" class="foto">
-                    <div class="card">
+                <div class="caixa top item">
+                    <img src="img/Rectangle_43.png" class="foto">
+                    <div class="cardmarrom">
                         <h3>Gerald Lawson</h3>
-                        <p>Criador do primeiro videogame com cartuchos intercambiáveis, o Fairchild Channel F.</p>
+                        <p>Criador do primeiro videogame com cartuchos.</p>
                     </div>
-                    <span class="connector"></span>
+                    <span class="conector"></span>
                 </div>
+
             </div>
 
-            <div class="linha">
+            <div class="linha" id="ultimalinha">
 
-                <div class="item bottom">
-                    <img src="IMG/index/marian.png" class="foto">
-                    <div class="card">
-                        <h3>Marian Croak: </h3>
-                        <p>Inventora da tecnologia de voz sobre IP (VoIP), usada em chamadas pela internet.</p>
+                <div class="caixa bottom item">
+                    <img src="img/Rectangle_35.png" class="foto">
+                    <div class="cardmarrom">
+                        <h3>Marian Croak</h3>
+                        <p>Inventora da tecnologia VoIP.</p>
                     </div>
-                    <span class="connector"></span>
+                    <span class="conector"></span>
                 </div>
 
-                <div class="item bottom">
-                    <img src="IMG/index/philip.png" class="foto">
-                    <div class="card">
-                        <h3>Philip Emeagwali: </h3>
-                        <p>Desenvolveu técnicas de supercomputação que influenciaram a Internet.</p>
+                <div class="caixa bottom item">
+                    <img src="img/Rectangle_37.png" class="foto">
+                    <div class="cardmarrom">
+                        <h3>Philip Emeagwali</h3>
+                        <p>Avanços em supercomputação.</p>
                     </div>
-                    <span class="connector"></span>
+                    <span class="conector"></span>
                 </div>
 
-                <div class="item bottom">
-                    <img src="IMG/index/otis.png" class="foto">
-                    <div class="card">
+                <div class="caixa bottom item">
+                    <img src="img/Rectangle_41.png" class="foto">
+                    <div class="cardmarrom">
                         <h3>Otis Boykin</h3>
-                        <p>Criou o resistor de precisão e melhorou o funcionamento do marcapasso.</p>
+                        <p>Melhorias no marcapasso.</p>
                     </div>
-                    <span class="connector"></span>
+                    <span class="conector"></span>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="cn">
-        <div>
-            <h2>O que é a Consciência Negra?</h2>
-            <p>A Consciência Negra é o reconhecimento e a valorização da história, cultura e identidade do povo negro. Ela simboliza a luta contra o racismo e a busca por respeito, igualdade e justiça social. No Brasil, é celebrada em 20 de novembro, data que homenageia Zumbi dos Palmares, líder que lutou pela liberdade dos negros escravizados. Esse dia convida à reflexão sobre a importância da diversidade e o combate ao preconceito em todas as formas.</p>
+            </div>
+
         </div>
-        <img src="IMG/index/CV-img.png" alt="">
-    </section>
+    </div>
+
+
+    <div class="segunda-secao-conteudo">
+
+        <div class="segunda-secao-esquerda">
+
+            <h1 id="CN">O que é a Consciência Negra?</h1>
+            <p>A Consciência Negra é o reconhecimento e a valorização da história, cultura e identidade do povo negro.
+                Ela
+                simboliza a luta contra o racismo e a busca por respeito, igualdade e justiça social. No Brasil, é
+                celebrada
+                em 20 de novembro, data que homenageia Zumbi dos Palmares, líder que lutou pela liberdade dos negros
+                escravizados. Esse dia convida à reflexão sobre a importância da diversidade e o combate ao preconceito
+                em
+                todas as formas.</p>
+
+        </div>
+
+
+        <div class="segunda-secao-direita">
+
+            <img src="img/image 2.png" alt="Imagem">
+
+        </div>
+
+    </div>
+
+
+    <div class="terceira-secao-conteudo">
+
+        <div class="titulo-terceira-secao">
+
+            <h1 id="NR">Negros revolucionários</h1>
+
+        </div>
+
+        <div class="conteudo-geral">
+
+
+            <div class="texto-terceira-secao">
+
+                <p>Ao longo da história, pessoas negras tiveram um papel essencial no avanço da tecnologia, mesmo quando
+                    enfrentavam barreiras sociais e raciais. Esses nomes abriram caminhos, criaram inovações e mudaram a
+                    forma
+                    como o mundo se conecta e progride.</p>
+            </div>
+
+        </div>
+
+        <div class="slider" id="main-slider">
+            <div class="slider-wrapper">
+                <a href=""><img src="img/primeiro-carroseal.png" alt="First" class="slide" /></a>
+                <a href=""><img src="img/segundo-carroseal.png" alt="Second" class="slide" /></a>
+                <a href=""><img src="img/terceirocarroseal.png" alt="Third" class="slide" /></a>
+                <a href=""><img src="img/quartocarroseal.png" alt="Fourth" class="slide" /></a>
+                <a href=""><img src="img/quintocarroseal.png" alt="Fifth" class="slide" /></a>
+                <a href=""><img src="img/sextocarroseal.png" alt="Sixth" class="slide" /></a>
+                <a href=""><img src="img/setimocarroseal.png" alt="Seventh" class="slide" /></a>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-previous">Previous</button>
+                <button class="slider-next">Next</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="container-footer-geral">
+
+
+            <div class="coisas-esquerda">
+
+                <img src="img/Monitor.png" alt="">
+                <img src="img/retangulofooter.png" alt="">
+
+            </div>
+
+            <div class="coisas-centro">
+
+                <h1>© 2025 2° TINF. Todos os direitos reservados.</h1>
+
+            </div>
+
+            <div class="coisa-direita">
+
+                <h1>Entre em contato</h1>
+
+                <div class="coisa-direita-imagens">
+
+                    <a href=""><img src="img/instagram.png" alt="" class="logos"></a>
+                    <a href=""><img src="img/Gmail Logo.png" alt="" class="logos2"></a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
