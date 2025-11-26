@@ -108,6 +108,9 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: center;
 }
+.div-secao2{
+    flex-direction: row;
+}
 .letras-secao2{
     font-family: "Questrial", sans-serif;
     font-weight: 400;
@@ -117,23 +120,11 @@ nav ul li a:hover::after {
     width: 350px;
     height: 200px;
 }
-#div-img-secao2{
+#div-geral-secao2{
     display: flex;
     justify-content: space-evenly;
 }
-#div-letras-secao2{
+.img-div-secao2{
     display: flex;
-    justify-content: space-evenly;
-}
-#img-livro{
-    width: 102px;
-    height: 101px;
-}
-#img-coisinha{
-    width: 180px;
-    height: 120px;
-}
-#img-pc{
-    width: 125px;
-    height: 100px;
+    justify-content: center;
 }
