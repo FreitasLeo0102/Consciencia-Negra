@@ -7,6 +7,13 @@ body {
     background-color: #C28245;
 }
 
+
+.linhadotempo{
+h2 {
+color: black;
+font-family: "Radley", serif;
+}
+    
 .cabecalho {
 
     display: flex;
@@ -337,4 +344,5 @@ body {
 
     width: 64px;
     height: 64px;
+
 }
