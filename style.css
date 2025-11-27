@@ -7,14 +7,6 @@ body {
     background-color: #C28245;
 }
 
-
-.linhadotempo{
-h2 {
-color: #7C2300;
-font-family: "Radley", serif;
-}
-}
-    
 .cabecalho {
 
     display: flex;
@@ -99,9 +91,10 @@ font-family: "Radley", serif;
 
 
 .timeline h2 {
-    font-family: ;
+    font-family: "Radley", serif;
     font-size: 4.375rem;
     margin: 4rem;
+    color: #7C2300;
     text-align: center;
 }
 
@@ -345,7 +338,4 @@ font-family: "Radley", serif;
 
     width: 64px;
     height: 64px;
-
 }
-
-
