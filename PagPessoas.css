@@ -87,6 +87,7 @@ nav ul li a:hover::after {
     font-style: normal;
     font-size: 80px;
     color: #D27114;
+    margin-left: 30px;
 }
 #texto-mark{
     font-family: "Questrial", sans-serif;
@@ -96,6 +97,7 @@ nav ul li a:hover::after {
     text-align: justify;
     color: #7C2300;
     margin-right: 50px;
+    margin-left: 30px;
 }
 #titulo-secao2{
     font-family: "Radley", serif;
@@ -110,6 +112,7 @@ nav ul li a:hover::after {
 }
 .div-secao2{
     flex-direction: row;
+    height: 400px;
 }
 .letras-secao2{
     font-family: "Questrial", sans-serif;
@@ -155,5 +158,39 @@ footer p {
 }
 
 .logo {
-    width: 100px;
+    width: 110px;
+}
+
+#gerald1{
+    height: 110px;
+}
+#gerald2{
+    height: 110px;
+}
+#gerald3{
+    height: 110px;
+}
+
+#philip1{
+    height: 110px;
+}
+#philip2{
+    height: 110px;
+}
+
+#tope1{
+    height: 110px;
+}
+#tope2{
+    height: 110px;
+}
+
+#shirley1{
+    height: 110px;
+}
+#shirley2{
+    height: 110px;
+}
+#shirley3{
+    height: 110px;
 }
