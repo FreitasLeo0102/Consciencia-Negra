@@ -126,10 +126,17 @@ nav ul li a:hover::after {
 #div-geral-secao2{
     display: flex;
     justify-content: space-evenly;
+    min-height: 450px;
 }
 .img-div-secao2{
     display: flex;
     justify-content: center;
+}
+
+.img-div-secao2 img {
+    max-width: 150px; 
+    max-height: 200px;
+    border-radius: 30px;
 }
 
 footer {
@@ -161,36 +168,4 @@ footer p {
     width: 110px;
 }
 
-#gerald1{
-    height: 110px;
-}
-#gerald2{
-    height: 110px;
-}
-#gerald3{
-    height: 110px;
-}
 
-#philip1{
-    height: 110px;
-}
-#philip2{
-    height: 110px;
-}
-
-#tope1{
-    height: 110px;
-}
-#tope2{
-    height: 110px;
-}
-
-#shirley1{
-    height: 110px;
-}
-#shirley2{
-    height: 110px;
-}
-#shirley3{
-    height: 110px;
-}

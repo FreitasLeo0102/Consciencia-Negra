@@ -25,15 +25,17 @@
         },
 
         _slideTo: function (slideIndex) {
-            var currentSlide = this.slides[slideIndex];
-            currentSlide.style.opacity = 1;
+    for (var i = 0; i < this.slides.length; i++) {
 
-            for (var i = 0; i < this.slides.length; i++) {
-                if (i !== slideIndex) {
-                    this.slides[i].style.opacity = 0;
-                }
-            }
-        },
+        if (i === slideIndex) {
+            this.slides[i].classList.add("active");
+            this.slides[i].style.opacity = 1;
+        } else {
+            this.slides[i].classList.remove("active");
+            this.slides[i].style.opacity = 0;
+        }
+    }
+},
 
         actions: function () {
             var self = this;
